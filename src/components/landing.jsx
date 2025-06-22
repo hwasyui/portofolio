@@ -4,9 +4,10 @@ import angelIcon from "../assets/angel-icon.svg";
 import { useTheme } from "../context/ThemeContext";
 
 const Landing = () => {
-  const { theme } = useTheme();
+  const { theme, setTheme } = useTheme();
   const svgRef = useRef(null);
 
+  // Apply theme color to SVG <g> element
   const applyThemeToSVG = () => {
     const g = svgRef.current?.contentDocument?.querySelector("g");
     if (g) {
@@ -34,8 +35,12 @@ const Landing = () => {
     };
   }, []);
 
+  const toggleTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
+
   return (
-    <div className="mb-10 flex flex-col-reverse md:flex-row items-center justify-center md:justify-between px-6 md:px-20 snap-start min-h-screen">
+    <section className="mb-10 flex flex-col-reverse md:flex-row items-center justify-center md:justify-between px-6 md:px-20 snap-start min-h-screen">
       {/* Left Text */}
       <div className="text-left max-w-2xl mt-5 md:mt-0">
         <h1 className="text-3xl md:text-5xl font-light leading-snug">
@@ -51,6 +56,17 @@ const Landing = () => {
           and continuous learning. I enjoy turning ideas into practical digital solutions through
           programming, data, and system development.
         </p>
+
+        {/* Theme Toggle Button */}
+        <div className="mt-8">
+          <button
+            onClick={toggleTheme}
+            className="text-2xl p-2 bg-gray-200 dark:bg-gray-700 rounded-full transition"
+            title="Toggle Dark Mode"
+          >
+            {theme === "dark" ? "🌞" : "🌙"}
+          </button>
+        </div>
       </div>
 
       {/* Right SVG */}
@@ -58,11 +74,11 @@ const Landing = () => {
         <object
           data={angelIcon}
           type="image/svg+xml"
-          className="w-72 md:w-[600px]"
+          className="w-72 md:w-[530px]"
           ref={svgRef}
         />
       </div>
-    </div>
+    </section>
   );
 };
 

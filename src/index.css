@@ -13,6 +13,17 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html,
+body {
+  height: 100%;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+body {
+  margin: 0;
+}
+
 /* Only keep resets or globals if really needed */
 body {
   margin: 0;
