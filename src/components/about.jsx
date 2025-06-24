@@ -1,4 +1,4 @@
-// src/pages/HeaderPage.jsx
+// src/pages/About.jsx
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
@@ -13,9 +13,9 @@ const photos = [
   "https://via.placeholder.com/400x300?text=Photo+4",
 ];
 
-const HeaderPage = () => {
+const AboutPage = () => {
   return (
-    <div className="flex flex-col md:flex-row w-full min-h-screen transition-colors duration-300 bg-white text-black dark:bg-black dark:text-white">
+    <div className="flex flex-col md:flex-row w-full transition-colors duration-500 bg-white text-black dark:bg-black dark:text-white">
       {/* Left side: Photo carousel */}
       <div className="w-full md:w-1/2 flex items-center justify-center p-4">
         <Swiper
@@ -53,7 +53,7 @@ const HeaderPage = () => {
           digital storytelling. My belief is that technology should empower people, and
           I aim to be part of innovations that reflect that.
         </p>
-        <p className="mb-4">
+        <p>
           Looking forward, I see myself contributing to impactful projects, collaborating
           with diverse teams, and constantly pushing the boundaries of what I can learn
           and create. I'm always open to connecting and exploring new ideas.
@@ -63,4 +63,4 @@ const HeaderPage = () => {
   );
 };
 
-export default HeaderPage;
+export default AboutPage;

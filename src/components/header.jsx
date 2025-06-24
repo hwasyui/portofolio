@@ -1,40 +1,41 @@
 // src/components/Header.jsx
-import React, { useState, useEffect, useRef } from "react";
-import angelLogoTiny from '../assets/angel-logo.svg';
-import "../css/header.css";
-import resume from '../assets/Angelica Suti Whiharto - Resume.pdf';
-import { Download } from "lucide-react";
+import React, { useEffect, useRef } from "react";
+import angelLogoTiny from "../assets/angel-logo.svg";
+import resume from "../assets/Angelica Suti Whiharto - Resume.pdf";
+import { Download, Menu } from "lucide-react";
 import { useTheme } from "../context/ThemeContext";
+import { Button } from "@/components/ui/button";
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+  SheetClose,
+} from "@/components/ui/sheet";
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
   const { theme } = useTheme();
   const headerSvgRef = useRef(null);
 
-  const applyThemeToSVG2 = () => {
+  const applyThemeToSVG = () => {
     const g = headerSvgRef.current?.contentDocument?.querySelector("g");
-    console.log(g)
     if (g) {
       g.setAttribute("fill", theme === "dark" ? "#FFFFFF" : "#000000");
     }
   };
 
   useEffect(() => {
-    applyThemeToSVG2();
+    applyThemeToSVG();
   }, [theme]);
 
   useEffect(() => {
     const svgObject = headerSvgRef.current;
     if (!svgObject) return;
 
-    const handleLoad = () => {
-      applyThemeToSVG2();
-    };
-
+    const handleLoad = () => applyThemeToSVG();
     svgObject.addEventListener("load", handleLoad);
 
     if (svgObject.contentDocument?.readyState === "complete") {
-      applyThemeToSVG2();
+      applyThemeToSVG();
     }
 
     return () => {
@@ -42,21 +43,18 @@ const Header = () => {
     };
   }, []);
 
-  useEffect(() => {
-    const handleOutsideClick = (event) => {
-      if (!event.target.closest(".mobile-menu") && !event.target.closest(".hamburger")) {
-        setIsOpen(false);
-      }
-    };
-    if (isOpen) document.addEventListener("click", handleOutsideClick);
-    return () => document.removeEventListener("click", handleOutsideClick);
-  }, [isOpen]);
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
-    <header className="header border-b border-none bg-white dark:bg-black text-black dark:text-white sticky top-0 z-50 transition-colors duration-500 shadow-[0_4px_12px_rgba(0,0,0,0.15)] dark:shadow-[0_4px_12px_rgba(255,255,255,0.1)]">
-      <div className="max-w-7xl mx-auto px-4 flex justify-between items-center h-16">
+    <header className="top-0 z-50 w-full border-b bg-white/90 dark:bg-black/90 backdrop-blur shadow-md">
+      <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center gap-2 font-bold">
+        <div className="flex items-center gap-2 font-bold text-lg">
           <object
             data={angelLogoTiny}
             type="image/svg+xml"
@@ -66,67 +64,93 @@ const Header = () => {
           <span>Angel's</span>
         </div>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex justify-center space-x-6 font-semibold">
-          <a href="#about">About Me</a>
-          <a href="#skills">Skills</a>
-          <a href="#project">Project</a>
-          <a href="#contact">Contact Me</a>
+        {/* Desktop Nav */}
+        <nav className="hidden md:flex gap-6 font-medium">
+          {["about", "skills", "projects", "contacts"].map((section) => (
+            <button
+              key={section}
+              onClick={() => scrollToSection(section)}
+              className="transition-colors hover:text-indigo-600 dark:hover:text-indigo-400"
+            >
+              {section === "about"
+                ? "About Me"
+                : section === "projects"
+                  ? "Project"
+                  : section === "contacts"
+                    ? "Contact Me"
+                    : "Skills"}
+            </button>
+          ))}
         </nav>
 
-        {/* Resume Button (Desktop) */}
-        <div className="hidden md:flex justify-end">
-          <a
-            href={resume}
-            download
-            className="text-black dark:text-white bg-white dark:bg-black border border-black dark:border-white px-4 py-2 rounded-md flex items-center gap-2 transition-all duration-300 ease-in-out hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black hover:scale-105"
-          >
-            Resume
-            <Download size={18} className="text-current" />
+        {/* Resume Download Button */}
+        <div className="hidden md:flex">
+          <a href={resume} download>
+            <Button variant="outline" className="gap-2">
+              Resume <Download size={16} />
+            </Button>
           </a>
         </div>
 
-        {/* Hamburger Icon (Mobile) */}
+        {/* Mobile Menu */}
         <div className="md:hidden">
-          <button
-            className="hamburger flex flex-col gap-1"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            <span className="w-6 h-0.5 bg-black dark:bg-white"></span>
-            <span className="w-6 h-0.5 bg-black dark:bg-white"></span>
-            <span className="w-6 h-0.5 bg-black dark:bg-white"></span>
-          </button>
+          <Sheet>
+            <SheetTrigger asChild>
+              <Button variant="ghost" size="icon">
+                <Menu />
+              </Button>
+            </SheetTrigger>
+            <SheetContent
+              side="left"
+              className="w-3/4 sm:w-1/2 bg-white dark:bg-black text-black dark:text-white shadow-lg px-6 py-8 space-y-6"
+            >
+              {/* Logo */}
+              <div className="flex items-center gap-2 font-bold text-lg">
+                <object
+                  data={angelLogoTiny}
+                  type="image/svg+xml"
+                  className="h-6"
+                  ref={headerSvgRef}
+                />
+                <span>Angel's</span>
+              </div>
+
+              {/* Navigation Links */}
+              <nav className="flex flex-col gap-4 text-base font-medium">
+                {["about", "skills", "project", "contact"].map((section) => (
+                  <SheetClose asChild key={section}>
+                    <button
+                      onClick={() => scrollToSection(section)}
+                      className="text-left transition-colors hover:text-indigo-600 dark:hover:text-indigo-400"
+                    >
+                      {section === "about"
+                        ? "About Me"
+                        : section === "project"
+                          ? "Project"
+                          : section === "contact"
+                            ? "Contact Me"
+                            : "Skills"}
+                    </button>
+                  </SheetClose>
+                ))}
+              </nav>
+
+              {/* Resume Button */}
+              <a href={resume} download className="block w-full">
+                <SheetClose asChild>
+                  <Button
+                    variant="outline"
+                    className="w-full justify-center gap-2 border border-black dark:border-white"
+                  >
+                    Resume <Download size={16} />
+                  </Button>
+                </SheetClose>
+              </a>
+            </SheetContent>
+
+          </Sheet>
         </div>
       </div>
-
-      {isOpen && (
-        <div className="mobile-menu fixed top-0 left-0 w-1/2 h-full bg-white dark:bg-black bg-opacity-95 z-40 shadow-lg p-6 text-black dark:text-white transition">
-          <div className="flex items-center gap-2 font-bold mb-6">
-            <object
-              data={angelLogoTiny}
-              type="image/svg+xml"
-              className="h-6"
-              ref={headerSvgRef}
-            />
-            <span>Angel's</span>
-          </div>
-          <nav className="flex flex-col space-y-4 font-semibold">
-            <a href="#about" onClick={() => setIsOpen(false)}>About Me</a>
-            <a href="#skills" onClick={() => setIsOpen(false)}>Skills</a>
-            <a href="#project" onClick={() => setIsOpen(false)}>Project</a>
-            <a href="#contact" onClick={() => setIsOpen(false)}>Contact Me</a>
-            <a
-              href={resume}
-              download
-              className="text-black dark:text-white bg-white dark:bg-black border border-black dark:border-white px-4 py-2 rounded-md flex items-center gap-2 transition-all duration-300 ease-in-out hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black hover:scale-105"
-              onClick={() => setIsOpen(false)}
-            >
-              Resume
-              <Download size={18} className="text-current" />
-            </a>
-          </nav>
-        </div>
-      )}
     </header>
   );
 };

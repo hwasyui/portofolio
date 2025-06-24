@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Chat Collect",
+    "image": "/images/chat-collect.png",
+    "description": "With the release of the OpenAI GPT Store, I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
+    "tech": ["Next.js", "Typescript", "PostgreSQL", "Prisma", "TailwindCSS", "Stripe", "Shadcn UI", "Magic UI"],
+    "gitrepo": "https://github.com/your-repo",
+    "url": "https://your-live-site.com",
+    "doc": "https://your-docs-or-report.com"
+  },
+  {
+    "title": "AI Portfolio",
+    "image": "/images/ai-portfolio.png",
+    "description": "An AI-powered developer portfolio that updates itself based on GitHub activity and user input. Fully animated and responsive.",
+    "tech": ["React", "Framer Motion", "OpenAI", "Vercel", "TailwindCSS"],
+    "url": "https://example.com"
+  },
+   {
+    "title": "Chat Collect",
+    "image": "/images/chat-collect.png",
+    "description": "With the release of the OpenAI GPT Store, I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
+    "tech": ["Next.js", "Typescript", "PostgreSQL", "Prisma", "TailwindCSS", "Stripe", "Shadcn UI", "Magic UI"],
+    "url": "https://example.com"
+  },
+  {
+    "title": "AI Portfolio",
+    "image": "/images/ai-portfolio.png",
+    "description": "An AI-powered developer portfolio that updates itself based on GitHub activity and user input. Fully animated and responsive.",
+    "tech": ["React", "Framer Motion", "OpenAI", "Vercel", "TailwindCSS"],
+    "url": "https://example.com"
+  },
+   {
+    "title": "Chat Collect",
+    "image": "/images/chat-collect.png",
+    "description": "With the release of the OpenAI GPT Store, I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
+    "tech": ["Next.js", "Typescript", "PostgreSQL", "Prisma", "TailwindCSS", "Stripe", "Shadcn UI", "Magic UI"],
+    "url": "https://example.com"
+  },
+  {
+    "title": "AI Portfolio",
+    "image": "/images/ai-portfolio.png",
+    "description": "An AI-powered developer portfolio that updates itself based on GitHub activity and user input. Fully animated and responsive.",
+    "tech": ["React", "Framer Motion", "OpenAI", "Vercel", "TailwindCSS"],
+    "url": "https://example.com"
+  },
+   {
+    "title": "Chat Collect",
+    "image": "/images/chat-collect.png",
+    "description": "With the release of the OpenAI GPT Store, I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
+    "tech": ["Next.js", "Typescript", "PostgreSQL", "Prisma", "TailwindCSS", "Stripe", "Shadcn UI", "Magic UI"],
+    "url": "https://example.com"
+  },
+  {
+    "title": "AI Portfolio",
+    "image": "/images/ai-portfolio.png",
+    "description": "An AI-powered developer portfolio that updates itself based on GitHub activity and user input. Fully animated and responsive.",
+    "tech": ["React", "Framer Motion", "OpenAI", "Vercel", "TailwindCSS"],
+    "url": "https://example.com"
+  },
+   {
+    "title": "Chat Collect",
+    "image": "/images/chat-collect.png",
+    "description": "With the release of the OpenAI GPT Store, I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
+    "tech": ["Next.js", "Typescript", "PostgreSQL", "Prisma", "TailwindCSS", "Stripe", "Shadcn UI", "Magic UI"],
+    "url": "https://example.com"
+  },
+  {
+    "title": "AI Portfolio",
+    "image": "/images/ai-portfolio.png",
+    "description": "An AI-powered developer portfolio that updates itself based on GitHub activity and user input. Fully animated and responsive.",
+    "tech": ["React", "Framer Motion", "OpenAI", "Vercel", "TailwindCSS"],
+    "url": "https://example.com"
+  }
+]

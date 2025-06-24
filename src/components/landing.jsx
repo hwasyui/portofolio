@@ -4,7 +4,7 @@ import angelIcon from "../assets/angel-icon.svg";
 import { useTheme } from "../context/ThemeContext";
 
 const Landing = () => {
-  const { theme, setTheme } = useTheme();
+  const { theme } = useTheme();
   const svgRef = useRef(null);
   const outlineClass = theme === 'dark' ? 'outlined-text-dark' : 'outlined-text';
 
@@ -35,12 +35,9 @@ const Landing = () => {
     };
   }, []);
 
-  const toggleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
-  };
-
   return (
-    <section className="scroll-mt-16 min-h-screenmb-10 flex flex-col-reverse md:flex-row items-center justify-center md:justify-between px-6 md:px-20 snap-start min-h-screen">
+    <section className="scroll-mt-16 min-h-screen mb-10 flex flex-col-reverse md:flex-row items-center justify-center md:justify-between px-6 md:px-20">
+      {/* Left Text Content */}
       <div className="text-left max-w-2xl mt-5 md:mt-0">
         <h1 className="text-3xl md:text-5xl font-light leading-snug">
           Hello, I’m <span className="font-bold">Angelica Suti Whiharto.</span>
@@ -55,23 +52,14 @@ const Landing = () => {
           and continuous learning. I enjoy turning ideas into practical digital solutions through
           programming, data, and system development.
         </p>
-
-        <div className="mt-8">
-          <button
-            onClick={toggleTheme}
-            className="text-2xl p-2 bg-gray-200 dark:bg-gray-700 rounded-full transition"
-            title="Toggle Dark Mode"
-          >
-            {theme === "dark" ? "🌞" : "🌙"}
-          </button>
-        </div>
       </div>
 
-      <div>
+      {/* Right SVG Illustration */}
+      <div className="mb-10 md:mb-0">
         <object
           data={angelIcon}
           type="image/svg+xml"
-          className="w-72 md:w-[530px]"
+          className="w-72 md:w-[400px]"
           ref={svgRef}
         />
       </div>
