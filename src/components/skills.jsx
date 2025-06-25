@@ -11,32 +11,7 @@ import {
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
-
-const skills = {
-  fullstack: ["Laravel", "Next.js", "React.js", "Node.js", "Vite", "Flask", "HTML", "CSS", "Bootstrap", "Tailwind CSS"],
-  databases: ["SQL", "NoSQL", "PostgreSQL", "MongoDB", "Firebase", "Supabase", "Neon", "Drizzle ORM"],
-  languages: ["JavaScript", "Python", "Java"],
-  ai: {
-    "Machine Learning": ["Supervised", "Unsupervised", "Reinforcement Learning"],
-    "Deep Learning": ["Model training", "Fine-tuning", "Deployment"],
-    "Computer Vision": ["Object Detection", "Image Classification", "Image Processing"],
-    "Natural Language Processing (NLP)": [
-      "Text Classification",
-      "Generation",
-      "Summarization",
-      "Sentiment Analysis",
-      "Speech Processing",
-      "Transformers",
-      "LLMs",
-    ],
-  },
-  tools: [
-    "Git", "GitHub", "Jupyter Notebook", "Kaggle", "Google Colab", "Notion",
-    "VS Code", "Firebase Console", "MongoDB Compass", "Google Workspace",
-    "Microsoft 365", "Blender", "Unity",
-  ],
-  visualization: ["Tableau"],
-};
+import skills from "../data/skills.json";
 
 const fadeVariants = {
   initial: { opacity: 0, y: 8 },
@@ -45,7 +20,7 @@ const fadeVariants = {
 
 const SkillGroup = ({ title, icon, items }) => (
   <div className="mb-8">
-    <div className="flex items-center gap-2 text-lg font-semibold dark:text-white">
+    <div className="flex items-center gap-2 text-lg font-semibold dark:text-white ">
       {icon}
       <span>{title}</span>
     </div>
@@ -54,7 +29,7 @@ const SkillGroup = ({ title, icon, items }) => (
         <Badge
           variant="outline"
           key={item}
-          className="text-sm px-3 py-1 border-muted-foreground whitespace-nowrap"
+          className="text-sm px-3 dark:bg-zinc-900 py-1 border-muted-foreground whitespace-nowrap"
         >
           {item}
         </Badge>

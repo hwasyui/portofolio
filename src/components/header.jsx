@@ -53,7 +53,6 @@ const Header = () => {
   return (
     <header className="top-0 z-50 w-full border-b bg-white/90 dark:bg-black/90 backdrop-blur shadow-md">
       <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
-        {/* Logo */}
         <div className="flex items-center gap-2 font-bold text-lg">
           <object
             data={angelLogoTiny}
@@ -63,8 +62,6 @@ const Header = () => {
           />
           <span>Angel's</span>
         </div>
-
-        {/* Desktop Nav */}
         <nav className="hidden md:flex gap-6 font-medium">
           {["about", "skills", "projects", "contacts"].map((section) => (
             <button

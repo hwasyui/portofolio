@@ -1,0 +1,46 @@
+{
+  "languages": [
+    {
+      "name": "Indonesian Language",
+      "level": "Native"
+    },
+    {
+      "name": "English",
+      "level": "Intermediate"
+    }
+  ],
+  "certificates": [
+    {
+      "title": "Duolingo English Test (130)",
+      "issuer": "Duolingo",
+      "id": "DUO-EN-130",
+      "link": "https://englishtest.duolingo.com"
+    },
+    {
+      "title": "Belajar Dasar AI",
+      "issuer": "Dicoding",
+      "id": "DIC-AI-01"
+    },
+    {
+      "title": "Memulai Pemrograman dengan Python",
+      "issuer": "Dicoding",
+      "id": "DIC-PY-01"
+    },
+    {
+      "title": "Belajar Dasar Visualisasi Data",
+      "issuer": "Dicoding",
+      "id": "DIC-DSV-01"
+    },
+    {
+      "title": "Belajar Dasar Data Science",
+      "issuer": "Dicoding",
+      "id": "DIC-DS-01"
+    },
+    {
+      "title": "Generative AI for Information System",
+      "issuer": "Thematic Academy, Digitalent",
+      "id": "GEN-AI-TA-2024",
+      "link": "https://digitalent.kominfo.go.id"
+    }
+  ]
+}

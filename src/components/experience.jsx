@@ -7,7 +7,7 @@ const Section = ({ title, items }) => (
     <h2 className="text-2xl font-bold text-zinc-800 dark:text-zinc-100">{title}</h2>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
       {items.map((item, idx) => (
-        <Card key={idx} className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700 shadow-md dark:shadow-lg transition-all">
+        <Card key={idx} className="bg-white dark:bg-zinc-900 border border-black dark:border-zinc-700 shadow-lg dark:shadow-lg transition-all">
           <CardContent className="p-5 space-y-2">
             <div className="text-lg font-semibold text-zinc-800 dark:text-white">{item.title}</div>
             <div className="text-sm text-zinc-500 dark:text-zinc-400 italic">

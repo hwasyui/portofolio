@@ -1,0 +1,27 @@
+{
+  "fullstack": [
+    "Laravel", "Next.js", "React.js", "Node.js", "Vite", "Flask", "HTML", "CSS", "Bootstrap", "Tailwind CSS"
+  ],
+  "databases": [
+    "SQL", "NoSQL", "PostgreSQL", "MongoDB", "Firebase", "Supabase", "Neon", "Drizzle ORM"
+  ],
+  "languages": [
+    "JavaScript", "Python", "Java"
+  ],
+  "ai": {
+    "Machine Learning": ["Supervised", "Unsupervised", "Reinforcement Learning"],
+    "Deep Learning": ["Model training", "Fine-tuning", "Deployment"],
+    "Computer Vision": ["Object Detection", "Image Classification", "Image Processing"],
+    "Natural Language Processing (NLP)": [
+      "Text Classification", "Generation", "Summarization", "Sentiment Analysis", "Speech Processing", "Transformers", "LLMs"
+    ]
+  },
+  "tools": [
+    "Git", "GitHub", "Jupyter Notebook", "Kaggle", "Google Colab", "Notion",
+    "VS Code", "Firebase Console", "MongoDB Compass", "Google Workspace",
+    "Microsoft 365", "Blender", "Unity"
+  ],
+  "visualization": [
+    "Tableau"
+  ]
+}

@@ -78,7 +78,7 @@ const Contact = () => {
                     Contact Me
                 </h1>
                 <p className="text-center text-muted-foreground mb-10">
-                    Have a project in mind or just want to say hello? Fill out the form below.
+                    Have a project in mind, want to recruit me, or just want to say hello? Fill out the form below.
                 </p>
 
                 <form ref={form} onSubmit={sendEmail} className="space-y-6">

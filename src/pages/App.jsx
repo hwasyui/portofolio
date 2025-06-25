@@ -6,11 +6,14 @@ import Landing from "../components/landing.jsx";
 import About from "../components/about.jsx";
 import Skills from "../components/skills.jsx";
 import Projects from "../components/projects.jsx";
-import Navigate  from "../components/navigate.jsx";
+import Navigate from "../components/navigate.jsx";
 import FullProjects from "./FullProjects.jsx";
 import Experiences from "../components/experience.jsx"
 import ContactMe from "../components/contact.jsx"
 import { motion, useInView, useAnimation } from "framer-motion";
+import ChatWidget from "../components/chatbot.jsx";
+import Educations from "../components/education.jsx";
+import Others from "../components/others.jsx";
 
 function AnimatedSection({ id, children }) {
   const ref = useRef(null);
@@ -45,8 +48,8 @@ function App() {
   return (
     <Router>
       <main className="flex flex-col w-full min-h-screen  bg-white dark:bg-black text-black dark:text-white transition-colors duration-500">
-        <Header />
-         <Navigate /> 
+        {/* <Header /> */}
+        <Navigate />
         <Routes>
           <Route
             path="/"
@@ -61,15 +64,22 @@ function App() {
                 <AnimatedSection id="skills">
                   <Skills />
                 </AnimatedSection>
+                <AnimatedSection id="educations">
+                  <Educations />
+                </AnimatedSection>
                 <AnimatedSection id="experiences">
                   <Experiences />
                 </AnimatedSection>
                 <AnimatedSection id="projects">
                   <Projects />
                 </AnimatedSection>
+                <AnimatedSection id="others">
+                  <Others />
+                </AnimatedSection>
                 <AnimatedSection id="contacts">
                   <ContactMe />
                 </AnimatedSection>
+                <ChatWidget />
               </>
             }
           />

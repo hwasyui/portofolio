@@ -36,8 +36,7 @@ const Landing = () => {
   }, []);
 
   return (
-    <section className="scroll-mt-16 min-h-screen mb-10 flex flex-col-reverse md:flex-row items-center justify-center md:justify-between px-6 md:px-20">
-      {/* Left Text Content */}
+    <section className=" min-h-screen mb-10 flex flex-col-reverse md:flex-row items-center justify-center md:justify-between px-6 md:px-20">
       <div className="text-left max-w-2xl mt-5 md:mt-0">
         <h1 className="text-3xl md:text-5xl font-light leading-snug">
           Hello, I’m <span className="font-bold">Angelica Suti Whiharto.</span>
@@ -53,13 +52,11 @@ const Landing = () => {
           programming, data, and system development.
         </p>
       </div>
-
-      {/* Right SVG Illustration */}
       <div className="mb-10 md:mb-0">
         <object
           data={angelIcon}
           type="image/svg+xml"
-          className="w-72 md:w-[400px]"
+          className="w-72 md:w-[480px]"
           ref={svgRef}
         />
       </div>
