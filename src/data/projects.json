@@ -10,7 +10,7 @@
   },
   {
     "title": "Autonomous Robotic Car",
-    "image": "src/data/images/robot.jpg",
+    "image": "/images/robot.jpg",
     "description": "An Arduino-powered robotic car with obstacle avoidance, fire detection, and water-spraying features, designed for hazard response.",
     "tech": ["Arduino", "Embedded Systems", "Sensors"],
     "gitrepo": "",
