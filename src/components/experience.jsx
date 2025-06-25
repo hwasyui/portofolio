@@ -23,9 +23,17 @@ const Section = ({ title, items }) => (
               <div className="text-lg font-semibold text-zinc-800 dark:text-white">
                 {item.title}
               </div>
+
+              {item.type && (
+                <div className="text-sm text-zinc-600 dark:text-zinc-200 font-medium">
+                  {item.type}
+                </div>
+              )}
+
               <div className="text-sm text-zinc-500 dark:text-zinc-400 italic">
-                {item.organization || item.company} — {item.date}
+                {(item.organization || item.company) + " — " + item.date}
               </div>
+
               <ul className="list-disc list-inside space-y-1 text-sm text-zinc-700 dark:text-zinc-300">
                 {item.responsibilities.map((point, index) => (
                   <li key={index}>{point}</li>

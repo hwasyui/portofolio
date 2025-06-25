@@ -1,74 +1,119 @@
 [
   {
-    "title": "Chat Collect",
-    "image": "/images/chat-collect.png",
-    "description": "With the release of the OpenAI GPT Store, I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
-    "tech": ["Next.js", "Typescript", "PostgreSQL", "Prisma", "TailwindCSS", "Stripe", "Shadcn UI", "Magic UI"],
+    "title": "Merchandise Website: Summarization and Sentiment Analysis",
+    "image": "/images/merch-summary.png",
+    "description": "A web app developed using Vite (ReactJS) and Firebase, integrating BART-Large-CNN for summarization and DistilBERT for sentiment analysis, deployed with Flask and Docker. Trained on a 6,000-review dataset crawled with WebHarvy.",
+    "tech": ["ReactJS", "Vite", "Firebase", "Flask", "Docker", "BART", "DistilBERT", "WebHarvy"],
+    "gitrepo": "https://github.com/your-repo",
+    "url": "",
+    "doc": ""
+  },
+  {
+    "title": "Autonomous Robotic Car",
+    "image": "src/data/images/robot.jpg",
+    "description": "An Arduino-powered robotic car with obstacle avoidance, fire detection, and water-spraying features, designed for hazard response.",
+    "tech": ["Arduino", "Embedded Systems", "Sensors"],
+    "gitrepo": "",
+    "url": "",
+    "doc": ""
+  },
+  {
+    "title": "RIYA's Chatbot",
+    "image": "/images/riya-chatbot.png",
+    "description": "A mobile chatbot application developed with Flutter and powered by a fine-tuned Llama-3.2-3B-Instruct model, using Transformers and Unsloth on a custom dataset.",
+    "tech": ["Flutter", "Llama 3", "Transformers", "Unsloth"],
+    "gitrepo": "https://github.com/your-repo",
+    "url": "",
+    "doc": ""
+  },
+  {
+    "title": "Tomato Ripeness Computer Vision",
+    "image": "/images/tomato-vision.png",
+    "description": "A computer vision system built using Python and YOLOv8m to detect and classify tomato ripeness from photos, videos, and real-time camera input.",
+    "tech": ["Python", "YOLOv8m", "Computer Vision"],
+    "gitrepo": "https://github.com/your-repo",
+    "url": "",
+    "doc": ""
+  },
+  {
+    "title": "RIYA's Speech Summarization",
+    "image": "/images/riya-summarization.png",
+    "description": "A multilingual speech-to-text summarization system using Python and mT5, supporting English, Indonesian, Russian, French, and Chinese. Includes real-time STT, customizable summarization, and TTS output.",
+    "tech": ["Python", "mT5", "SpeechRecognition", "TTS"],
+    "gitrepo": "https://github.com/your-repo",
+    "url": "",
+    "doc": ""
+  },
+  {
+    "title": "PAPI (Powerful Artistic Photo Innovator)",
+    "image": "/images/papi.png",
+    "description": "A Python-based desktop image editor developed with Tkinter and OpenCV. Includes features such as filtering, brightness adjustment, and artistic enhancements.",
+    "tech": ["Python", "Tkinter", "OpenCV"],
+    "gitrepo": "https://github.com/your-repo",
+    "url": "",
+    "doc": ""
+  },
+  {
+    "title": "Urban Night City",
+    "image": "/images/urban-night-city.png",
+    "description": "A 3D modeling and animation project created using Blender, visualizing a vibrant futuristic city at night as part of a design course.",
+    "tech": ["Blender"],
+    "gitrepo": "",
+    "url": "",
+    "doc": ""
+  },
+  {
+    "title": "Resume Reviewer",
+    "image": "/images/resume-reviewer.png",
+    "description": "Review and assess 769 student resumes for President University's Batch 2023 and 2024, completed within one month from Nov to Dec 2024. Conducted fully in English.",
+    "tech": ["Manual Review", "Professional Assessment"],
+    "gitrepo": "",
+    "url": "",
+    "doc": ""
+  },
+  {
+    "title": "Hunt The Wumpus",
+    "image": "/images/hunt-wumpus.png",
+    "description": "An AI-based grid game developed using Python and Alpha-Beta Pruning to simulate strategic gameplay in a 6x6 Hunt-The-Wumpus environment.",
+    "tech": ["Python", "Alpha-Beta Pruning"],
     "gitrepo": "https://github.com/your-repo",
     "url": "https://your-live-site.com",
     "doc": "https://your-docs-or-report.com"
   },
   {
-    "title": "AI Portfolio",
-    "image": "/images/ai-portfolio.png",
-    "description": "An AI-powered developer portfolio that updates itself based on GitHub activity and user input. Fully animated and responsive.",
-    "tech": ["React", "Framer Motion", "OpenAI", "Vercel", "TailwindCSS"],
-    "url": "https://example.com"
-  },
-   {
-    "title": "Chat Collect",
-    "image": "/images/chat-collect.png",
-    "description": "With the release of the OpenAI GPT Store, I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
-    "tech": ["Next.js", "Typescript", "PostgreSQL", "Prisma", "TailwindCSS", "Stripe", "Shadcn UI", "Magic UI"],
-    "url": "https://example.com"
+    "title": "Pookies",
+    "image": "/images/pookies.png",
+    "description": "An Android chatbot app built using Java in Android Studio, powered by OpenAI's API and integrated with Firebase for backend services.",
+    "tech": ["Android Studio", "Java", "Firebase", "OpenAI API"],
+    "gitrepo": "https://github.com/your-repo",
+    "url": "https://your-live-site.com",
+    "doc": "https://your-docs-or-report.com"
   },
   {
-    "title": "AI Portfolio",
-    "image": "/images/ai-portfolio.png",
-    "description": "An AI-powered developer portfolio that updates itself based on GitHub activity and user input. Fully animated and responsive.",
-    "tech": ["React", "Framer Motion", "OpenAI", "Vercel", "TailwindCSS"],
-    "url": "https://example.com"
-  },
-   {
-    "title": "Chat Collect",
-    "image": "/images/chat-collect.png",
-    "description": "With the release of the OpenAI GPT Store, I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
-    "tech": ["Next.js", "Typescript", "PostgreSQL", "Prisma", "TailwindCSS", "Stripe", "Shadcn UI", "Magic UI"],
-    "url": "https://example.com"
+    "title": "WellBelle",
+    "image": "/images/wellbelle.png",
+    "description": "An AI-powered chatbot for disease prediction, using Naive Bayes classification and TF-IDF. Enhanced with spaCy for advanced natural language processing.",
+    "tech": ["Python", "Naive Bayes", "TF-IDF", "spaCy"],
+    "gitrepo": "https://github.com/your-repo",
+    "url": "https://your-live-site.com",
+    "doc": "https://your-docs-or-report.com"
   },
   {
-    "title": "AI Portfolio",
-    "image": "/images/ai-portfolio.png",
-    "description": "An AI-powered developer portfolio that updates itself based on GitHub activity and user input. Fully animated and responsive.",
-    "tech": ["React", "Framer Motion", "OpenAI", "Vercel", "TailwindCSS"],
-    "url": "https://example.com"
-  },
-   {
-    "title": "Chat Collect",
-    "image": "/images/chat-collect.png",
-    "description": "With the release of the OpenAI GPT Store, I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
-    "tech": ["Next.js", "Typescript", "PostgreSQL", "Prisma", "TailwindCSS", "Stripe", "Shadcn UI", "Magic UI"],
-    "url": "https://example.com"
+    "title": "MoTrack",
+    "image": "/images/motrack.png",
+    "description": "A simple yet functional full-stack expense tracker website developed as an academic project. Built using Next.js, React, Tailwind CSS, Drizzle ORM, and Clerk for authentication.",
+    "tech": ["Next.js", "React", "Tailwind CSS", "Drizzle ORM", "Clerk"],
+    "gitrepo": "https://github.com/your-repo",
+    "url": "https://your-live-site.com",
+    "doc": "https://your-docs-or-report.com"
   },
   {
-    "title": "AI Portfolio",
-    "image": "/images/ai-portfolio.png",
-    "description": "An AI-powered developer portfolio that updates itself based on GitHub activity and user input. Fully animated and responsive.",
-    "tech": ["React", "Framer Motion", "OpenAI", "Vercel", "TailwindCSS"],
-    "url": "https://example.com"
-  },
-   {
-    "title": "Chat Collect",
-    "image": "/images/chat-collect.png",
-    "description": "With the release of the OpenAI GPT Store, I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
-    "tech": ["Next.js", "Typescript", "PostgreSQL", "Prisma", "TailwindCSS", "Stripe", "Shadcn UI", "Magic UI"],
-    "url": "https://example.com"
-  },
-  {
-    "title": "AI Portfolio",
-    "image": "/images/ai-portfolio.png",
-    "description": "An AI-powered developer portfolio that updates itself based on GitHub activity and user input. Fully animated and responsive.",
-    "tech": ["React", "Framer Motion", "OpenAI", "Vercel", "TailwindCSS"],
-    "url": "https://example.com"
+    "title": "Pet Shop Management System",
+    "image": "/images/pet-shop.png",
+    "description": "An academic project combining a website and a desktop GUI to manage pet shop operations such as appointment scheduling, product checkout, and employee management. Built using PHP, MySQL, Java, JavaScript, CSS, and Bootstrap.",
+    "tech": ["PHP", "MySQL", "Java", "JavaScript", "CSS", "Bootstrap"],
+    "gitrepo": "https://github.com/your-repo",
+    "url": "https://your-live-site.com",
+    "doc": "https://your-docs-or-report.com"
   }
 ]

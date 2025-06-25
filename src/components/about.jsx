@@ -1,26 +1,22 @@
-// src/pages/About.jsx
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import "../css/header.css"; // optional for your custom CSS if needed
+import photo1 from "../assets/images/photo1.jpg";
+import photo2 from "../assets/images/photo2.jpg";
+import photo3 from "../assets/images/photo3.jpg";
+import photo4 from "../assets/images/photo4.jpg";
 
-const photos = [
-  "https://via.placeholder.com/400x300?text=Photo+1",
-  "https://via.placeholder.com/400x300?text=Photo+2",
-  "https://via.placeholder.com/400x300?text=Photo+3",
-  "https://via.placeholder.com/400x300?text=Photo+4",
-];
+const photos =  [photo4, photo1, photo3, photo2];
 
 const AboutPage = () => {
   return (
     <div className="flex flex-col md:flex-row w-full transition-colors duration-500 bg-white text-black dark:bg-black dark:text-white">
-      {/* Left side: Photo carousel */}
       <div className="w-full md:w-1/2 flex items-center justify-center p-4">
         <Swiper
           modules={[Autoplay, Pagination]}
-          autoplay={{ delay: 500, disableOnInteraction: false }}
+          autoplay={{ delay: 1500, disableOnInteraction: false }}
           pagination={{ clickable: true }}
           loop={true}
           spaceBetween={20}

@@ -5,20 +5,17 @@
     "period": "2023 - Present",
     "location": "Cikarang, Indonesia",
     "description":  [
-        "Developed AI prompts for lecturers and website content.",
-        "Refined student handbook for AI alignment.",
-        "Built AI dashboard using d3js and Next.js"
+        "Current GPA: 3.94/4.00 (87 credits).",
+        "75% Jababeka Scholarship for Undergraduate Students, President University."
       ]
   },
   {
-    "school": "SMA Negeri 1 Jakarta",
-    "degree": "Senior High School - Science Major",
+    "school": "SMAN 4 Bekasi",
+    "degree": "Senior High School",
     "period": "2020 - 2023",
-    "location": "Jakarta, Indonesia",
+    "location": "Bekasi Barat, Indonesia",
     "description":  [
-        "Developed AI prompts for lecturers and website content.",
-        "Refined student handbook for AI alignment.",
-        "Built AI dashboard using d3js and Next.js"
+        "Mathematical and Science Concentration."
       ]
   }
 ]

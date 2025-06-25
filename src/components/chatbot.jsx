@@ -103,7 +103,7 @@ User: ${message}`;
               className="h-6"
               ref={headerChatSvgRef}
             />
-            <span className='pl-2'>Angel's</span>
+            <span className='pl-2'>Angelica's</span>
           </div>
 
           <div className="h-[360px] overflow-y-auto px-4 py-3 space-y-2 text-sm">
