@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import data from "../data/others.json";
 import { Badge } from "@/components/ui/badge";
 import { ArrowUpRight } from "lucide-react";
+import { Button } from "@/components/ui/button"; // Assuming you use a Button component
 
 const Others = () => {
+  const [showAll, setShowAll] = useState(false);
+
+  const visibleCertificates = showAll
+    ? data.certificates
+    : data.certificates.slice(0, 3);
+
   return (
     <div className="w-full p-4 md:p-6 bg-white border-black border-1 dark:bg-zinc-900 rounded-2xl shadow-md space-y-6">
       <h2 className="text-2xl font-semibold text-zinc-800 dark:text-zinc-100">Others</h2>
+
+      {/* Languages */}
       <div>
         <h3 className="text-lg font-medium text-zinc-700 dark:text-zinc-300 mb-2">Languages</h3>
         <ul className="space-y-1 pl-4 list-disc">
@@ -19,10 +28,11 @@ const Others = () => {
         </ul>
       </div>
 
+      {/* Certificates */}
       <div>
         <h3 className="text-lg font-medium text-zinc-700 dark:text-zinc-300 mb-2">Certificates</h3>
         <ul className="space-y-3">
-          {data.certificates.map((cert, idx) => (
+          {visibleCertificates.map((cert, idx) => (
             <li
               key={idx}
               className="group flex flex-col md:flex-row md:items-center md:justify-between bg-zinc-50 dark:bg-zinc-800 px-4 py-3 rounded-xl transition-all duration-200 hover:shadow-md hover:bg-zinc-100 dark:hover:bg-zinc-700"
@@ -49,6 +59,18 @@ const Others = () => {
             </li>
           ))}
         </ul>
+        {data.certificates.length > 3 && (
+          <div className="mt-4 text-center">
+            <Button
+              variant="outline"
+              size="sm"
+              className="text-sm text-zinc-700 dark:text-zinc-300 border-zinc-300 dark:border-zinc-600 hover:bg-zinc-100 dark:hover:bg-zinc-700"
+              onClick={() => setShowAll(!showAll)}
+            >
+              {showAll ? "Show Less" : "Show More"}
+            </Button>
+          </div>
+        )}
       </div>
     </div>
   );
