@@ -3,8 +3,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import photo1 from "../assets/images/photo1.jpg";
-import photo2 from "../assets/images/photo2.jpg";
+import photo1 from "../assets/images/photo1.JPG";
+import photo2 from "../assets/images/photo2.JPG";
 import photo3 from "../assets/images/photo3.jpg";
 import photo4 from "../assets/images/photo4.jpg";
 
