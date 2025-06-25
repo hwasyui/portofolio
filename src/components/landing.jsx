@@ -47,9 +47,9 @@ const Landing = () => {
           Based In <span className="font-bold">Indonesia.</span>
         </h2>
         <p className="mt-6 text-gray-600 dark:text-gray-300 text-sm md:text-base">
-          An Informatics student from the 2023 batch with a passion for technology, problem-solving,
+          An Informatics student from President University with a passion for technology, problem-solving,
           and continuous learning. I enjoy turning ideas into practical digital solutions through
-          programming, data, and system development.
+          programming, data, and system development. Interested in learning more about me? Scroll down below to dive deeper into my world of AI, Data, and Web Development!
         </p>
       </div>
       <div className="mb-10 md:mb-0">

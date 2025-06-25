@@ -20,19 +20,24 @@ const fadeVariants = {
 
 const SkillGroup = ({ title, icon, items }) => (
   <div className="mb-8">
-    <div className="flex items-center gap-2 text-lg font-semibold dark:text-white ">
+    <div className="flex items-center gap-2 text-lg font-semibold dark:text-white">
       {icon}
       <span>{title}</span>
     </div>
     <div className="flex flex-wrap gap-2 mt-3">
       {items.map((item) => (
-        <Badge
-          variant="outline"
+        <motion.div
           key={item}
-          className="text-sm px-3 dark:bg-zinc-900 py-1 border-muted-foreground whitespace-nowrap"
+          whileHover={{ scale: 1.08, backgroundColor: "rgba(255,255,255,0.1)" }}
+          transition={{ type: "spring", stiffness: 300, damping: 20 }}
         >
-          {item}
-        </Badge>
+          <Badge
+            variant="outline"
+            className="text-sm px-3 py-1 dark:bg-zinc-900 border-muted-foreground whitespace-nowrap cursor-pointer transition-all"
+          >
+            {item}
+          </Badge>
+        </motion.div>
       ))}
     </div>
   </div>
@@ -58,7 +63,7 @@ const Skills = () => {
                 <TabsTrigger
                   key={value}
                   value={value}
-                  className="data-[state=active]:bg-gray-200 dark:data-[state=active]:bg-gray-700
+                  className="data-[state=active]:bg-gray-200 dark:data-[state=active]:bg-zinc-900
                              data-[state=active]:text-black dark:data-[state=active]:text-white
                              data-[state=active]:scale-105 transition-all duration-300 ease-in-out
                              rounded-md px-4 py-2 flex items-center gap-2 whitespace-nowrap"

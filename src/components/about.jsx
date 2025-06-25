@@ -37,26 +37,25 @@ const AboutPage = () => {
           ))}
         </Swiper>
       </div>
-
-      {/* Right side: About Me */}
       <div className="w-full md:w-1/2 p-6 overflow-y-auto">
         <h1 className="text-4xl font-bold mb-4">About Me</h1>
         <p className="mb-4">
-          I am a passionate individual driven by curiosity and creativity. My journey
-          into tech started from a simple love for problem-solving, and it has grown
-          into a full-fledged career pursuit. I enjoy building solutions that are both
-          elegant and efficient.
+          Hi! I'm someone who's endlessly curious and just a little obsessed with making smart 
+          things happen through code. My tech journey began with tinkering and wondering <strong>“What if I built this?”</strong> 
+          — and it quickly became a full-blown love for AI, data, and web development.
         </p>
         <p className="mb-4">
-          When I'm not coding, I spend time learning new concepts in AI, exploring
-          cybersecurity, and occasionally indulging in creative outlets like drawing or
-          digital storytelling. My belief is that technology should empower people, and
-          I aim to be part of innovations that reflect that.
+           I get excited about building things that not only work well but feel magical to use. 
+           Whether it's designing a sleek website or diving into AI models, 
+           I'm happiest when I'm solving problems and learning something new.
+        </p>
+        <p className="mb-4">
+          Outside the screen, you'll usually find me with a book in hand — 
+          I love stories, especially the ones that make me think or dream a little bigger.
         </p>
         <p>
-          Looking forward, I see myself contributing to impactful projects, collaborating
-          with diverse teams, and constantly pushing the boundaries of what I can learn
-          and create. I'm always open to connecting and exploring new ideas.
+           I'm always up for new ideas, fun collaborations, and anything that 
+           involves turning curiosity into something real and useful. Let's build cool things together!
         </p>
       </div>
     </div>

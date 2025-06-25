@@ -4,13 +4,21 @@
     "degree": "Bachelor of Information Technology",
     "period": "2023 - Present",
     "location": "Cikarang, Indonesia",
-    "description": "Focused on software engineering, cybersecurity, and machine learning. GPA: 3.95. Active in academic and tech organizations."
+    "description":  [
+        "Developed AI prompts for lecturers and website content.",
+        "Refined student handbook for AI alignment.",
+        "Built AI dashboard using d3js and Next.js"
+      ]
   },
   {
     "school": "SMA Negeri 1 Jakarta",
     "degree": "Senior High School - Science Major",
     "period": "2020 - 2023",
     "location": "Jakarta, Indonesia",
-    "description": "Participated in various science competitions and led the IT Club. Graduated with honors."
+    "description":  [
+        "Developed AI prompts for lecturers and website content.",
+        "Refined student handbook for AI alignment.",
+        "Built AI dashboard using d3js and Next.js"
+      ]
   }
 ]
