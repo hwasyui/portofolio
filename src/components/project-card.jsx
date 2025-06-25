@@ -6,11 +6,17 @@ import { Globe, Github, FileText } from "lucide-react";
 const ProjectCard = ({ project }) => {
   return (
     <div className="flex flex-col h-full border rounded-xl p-6 space-y-4 shadow-md bg-white dark:bg-zinc-900 dark:border-zinc-700 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-[0_10px_20px_rgba(0,0,0,0.25)] dark:hover:shadow-zinc-800">
-      <img
-        src={project.image}
-        alt={project.title}
-        className="w-full h-40 object-cover rounded-lg border dark:border-zinc-700"
-      />
+      {project.image ? (
+        <img
+          src={project.image}
+          alt={project.title}
+          className="w-full h-40 object-cover rounded-lg border dark:border-zinc-700"
+        />
+      ) : (
+        <div className="w-full h-40 flex items-center justify-center rounded-lg border bg-zinc-100 text-zinc-600 dark:bg-zinc-800 dark:text-zinc-300 dark:border-zinc-700 text-center text-sm font-medium">
+          CONFIDENTIAL / DOCUMENTATION GONE
+        </div>
+      )}
 
       <h3 className="text-xl font-bold text-zinc-800 dark:text-white">
         {project.title}

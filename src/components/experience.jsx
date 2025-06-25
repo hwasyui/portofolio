@@ -12,14 +12,15 @@ const Section = ({ title, items }) => (
       {items.map((item, idx) => (
         <motion.div
           key={idx}
+          className="h-full"
           whileHover={{
             scale: 1.03,
             boxShadow: "0 12px 24px rgba(0,0,0,0.1)",
           }}
           transition={{ type: "spring", stiffness: 200, damping: 15 }}
         >
-          <Card className="bg-white dark:bg-zinc-900 border border-black dark:border-zinc-700 shadow-md dark:shadow-lg transition-all">
-            <CardContent className="p-5 space-y-2">
+          <Card className="bg-white dark:bg-zinc-900 border border-black dark:border-zinc-700 shadow-md dark:shadow-lg transition-all h-full flex flex-col">
+            <CardContent className="p-5 space-y-2 flex flex-col flex-grow">
               <div className="text-lg font-semibold text-zinc-800 dark:text-white">
                 {item.title}
               </div>

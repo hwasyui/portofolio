@@ -12,35 +12,68 @@
   "certificates": [
     {
       "title": "Duolingo English Test (130)",
-      "issuer": "Duolingo",
-      "id": "DUO-EN-130",
-      "link": "https://englishtest.duolingo.com"
+      "issuer": "Duolingo English Test",
+      "id": "e00f80fd3cd4558aa9cf2018feb07c71",
+      "link": "https://certs.duolingo.com/e00f80fd3cd4558aa9cf2018feb07c71"
     },
     {
       "title": "Belajar Dasar AI",
       "issuer": "Dicoding",
-      "id": "DIC-AI-01"
+      "id": "QLZ93JO27Z5D",
+      "link": "https://www.dicoding.com/certificates/QLZ93JO27Z5D"
     },
     {
       "title": "Memulai Pemrograman dengan Python",
       "issuer": "Dicoding",
-      "id": "DIC-PY-01"
+      "id": "GRX535Y9YZ0M",
+      "link": "https://www.dicoding.com/certificates/GRX535Y9YZ0M"
     },
     {
       "title": "Belajar Dasar Visualisasi Data",
       "issuer": "Dicoding",
-      "id": "DIC-DSV-01"
+      "id": "RVZKWD7KQZD5",
+      "link": "https://www.dicoding.com/certificates/RVZKWD7KQZD5"
     },
     {
       "title": "Belajar Dasar Data Science",
       "issuer": "Dicoding",
-      "id": "DIC-DS-01"
+      "id": "JLX12224JZ72",
+      "link": "https://www.dicoding.com/certificates/JLX12224JZ72"
     },
     {
-      "title": "Generative AI for Information System",
-      "issuer": "Thematic Academy, Digitalent",
-      "id": "GEN-AI-TA-2024",
-      "link": "https://digitalent.kominfo.go.id"
+      "title": "Pelatihan Generative AI for Information System Thematic Academy",
+      "issuer": "Digital Talent Scholarship 2024",
+      "id": ""
+    },
+    {
+      "title": "Memahami Aspek Pengembangan Produk AI Micro Skill",
+      "issuer": "Digital Talent Scholarship 2025",
+      "id": ""
+    },
+    {
+      "title": "Introduction To Cloud Computing Micro Skill",
+      "issuer": "Digital Talent Scholarship 2025",
+      "id": ""
+    },
+    {
+      "title": "Alibaba Cloud Model Studio and Qwen Talent Scouting Academy",
+      "issuer": "Digital Talent Scholarship 2025",
+      "id": ""
+    },
+    {
+      "title": "Pra - Hackathon Talent Scouting Academy",
+      "issuer": "Digital Talent Scholarship 2025",
+      "id": ""
+    },
+    {
+      "title": "Wawasan Karir dalam Bidang Data Analytics Micro Skill",
+      "issuer": "Digital Talent Scholarship 2025",
+      "id": ""
+    },
+    {
+      "title": "Pengenalan Data Science dan Pemanfaatannya di Berbagai Sektor Micro Skill",
+      "issuer": "Digital Talent Scholarship 2025",
+      "id": ""
     }
   ]
 }

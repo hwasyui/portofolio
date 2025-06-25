@@ -74,6 +74,13 @@ const Navigate = () => {
       document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
     }
   };
+  const downloadResume = () => {
+  const link = document.createElement("a");
+  link.href = "/Angelica Suti Whiharto - Resume.pdf";
+  link.download = "Angelica Suti Whiharto - Resume.pdf";
+  link.click();
+};
+
 
   if (!mounted) return null;
 
@@ -90,7 +97,7 @@ const Navigate = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      {/* Internal Navigation */}
+
       {navItems.map(({ id, icon, label }) => (
         <Button
           key={id}
@@ -106,20 +113,16 @@ const Navigate = () => {
 
       <span className="mx-1 h-6 w-[1px] bg-zinc-400 dark:bg-zinc-600 shrink-0" />
 
-      {/* Resume Download */}
       <Button
         variant="ghost"
         size="icon"
         className="hover:bg-zinc-200 dark:hover:bg-zinc-700"
         title="Download Resume"
-        onClick={() =>
-          window.open("/Angelica Suti Whiharto - Resume.pdf", "_blank")
-        }
+        onClick={downloadResume}
       >
         <FileDown size={20} />
       </Button>
 
-      {/* External Links */}
       {externalLinks.map(({ href, icon, label }, index) => (
         <Button
           key={index}
@@ -135,7 +138,6 @@ const Navigate = () => {
 
       <span className="mx-1 h-6 w-[1px] bg-zinc-400 dark:bg-zinc-600 shrink-0" />
 
-      {/* Theme Toggle */}
       <Button
         variant="ghost"
         size="icon"

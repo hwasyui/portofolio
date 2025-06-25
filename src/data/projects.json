@@ -100,7 +100,7 @@
   },
   {
     "title": "Pet Shop Management System",
-    "image": "/images/pet-shop.png",
+    "image": "",
     "description": "An academic project combining a website and a desktop GUI to manage pet shop operations such as appointment scheduling, product checkout, and employee management. Built using PHP, MySQL, Java, JavaScript, CSS, and Bootstrap.",
     "tech": ["PHP", "MySQL", "Java", "JavaScript", "CSS", "Bootstrap"],
     "gitrepo": "",

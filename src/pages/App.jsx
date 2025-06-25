@@ -1,7 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "../css/App.css";
-import Header from "../components/header.jsx";
 import Landing from "../components/landing.jsx";
 import About from "../components/about.jsx";
 import Skills from "../components/skills.jsx";
@@ -48,7 +47,6 @@ function App() {
   return (
     <Router>
       <main className="flex flex-col w-full min-h-screen  bg-white dark:bg-black text-black dark:text-white transition-colors duration-500">
-        {/* <Header /> */}
         <Navigate />
         <Routes>
           <Route
