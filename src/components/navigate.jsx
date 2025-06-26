@@ -33,17 +33,17 @@ const navItems = [
 
 const externalLinks = [
   {
-    href: "https://github.com/yourusername",
+    href: "https://github.com/hwasyui",
     icon: <Github size={20} />,
     label: "GitHub",
   },
   {
-    href: "https://linkedin.com/in/yourusername",
+    href: "https://www.linkedin.com/in/angelicawhiharto",
     icon: <Linkedin size={20} />,
     label: "LinkedIn",
   },
   {
-    href: "https://instagram.com/yourusername",
+    href: "https://www.instagram.com/angelstwhr",
     icon: <Instagram size={20} />,
     label: "Instagram",
   },
