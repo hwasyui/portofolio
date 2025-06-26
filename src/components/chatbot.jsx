@@ -43,14 +43,20 @@ const RAGChat = () => {
   }, [open]);
 
   const sendToGemini = async (message) => {
-    const prompt = `You are a helpful assistant. Use the following personal data to answer questions:
+    const prompt = `
+You are a helpful and knowledgeable assistant.
 
-Skills: ${JSON.stringify(personalData.skills)}
-Education: ${JSON.stringify(personalData.educations)}
-Experience: ${JSON.stringify(personalData.experiences)}
-Projects: ${JSON.stringify(personalData.projects)}
+All the following data belongs to a person named **Angelica Suti Whiharto**. When answering any user question, use this data to respond as if you know her personally. Be accurate, informative, and concise. If a question like "Who is Angelica Suti Whiharto?" is asked, generate a brief profile summary based on the data.
 
-User: ${message}`;
+Angelica's Personal Data:
+
+Skills: ${JSON.stringify(personalData.skills, null, 2)}
+Education: ${JSON.stringify(personalData.educations, null, 2)}
+Experience: ${JSON.stringify(personalData.experiences, null, 2)}
+Projects: ${JSON.stringify(personalData.projects, null, 2)}
+
+User: ${message}
+`;
 
     setIsTyping(true);
     const res = await fetch(
@@ -109,7 +115,7 @@ User: ${message}`;
           <div className="h-[360px] overflow-y-auto px-4 py-3 space-y-2 text-sm">
             {messages.length === 0 && (
               <div className="text-zinc-500 dark:text-zinc-400">
-                Hello there! 👋 If you have any  regarding the portofolio, I'm here to help.
+                Hello there! 👋 If you have any questions regarding the portofolio, I'm here to help.
                 For example you can ask things such as: "Show me projects related to Web Development."
                 Then, I'll send you the related projects!
               </div>
