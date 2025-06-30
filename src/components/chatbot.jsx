@@ -101,7 +101,7 @@ User: ${message}
       </Button>
 
       {open && (
-        <div className="fixed bottom-20 right-4 w-[320px] max-h-[500px] rounded-2xl shadow-xl overflow-hidden z-50 bg-white dark:bg-zinc-900 border-2 shadow-2xl border-zinc-200 dark:border-zinc-700">
+        <div className="fixed bottom-20 right-4 w-[320px] max-h-[500px] rounded-2xl overflow-hidden z-50 bg-white dark:bg-zinc-900 border-2 shadow-2xl border-zinc-200 dark:border-zinc-700">
           <div className="px-5 py-3 bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-white font-semibold text-sm flex items-center">
             <object
               data={angelLogo}
@@ -123,11 +123,10 @@ User: ${message}
             {messages.map((m, idx) => (
               <div
                 key={idx}
-                className={`px-4 py-2 rounded-xl max-w-[85%] whitespace-pre-wrap break-words ${
-                  m.role === "user"
+                className={`px-4 py-2 rounded-xl max-w-[85%] whitespace-pre-wrap break-words ${m.role === "user"
                     ? "bg-zinc-600 text-white ml-auto"
                     : "bg-zinc-200 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 mr-auto"
-                }`}
+                  }`}
               >
                 <ReactMarkdown>{m.text}</ReactMarkdown>
               </div>

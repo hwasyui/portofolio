@@ -7,12 +7,14 @@ import Skills from "../components/skills.jsx";
 import Projects from "../components/projects.jsx";
 import Navigate from "../components/navigate.jsx";
 import FullProjects from "./FullProjects.jsx";
+import FullOthers from "./FullOthers.jsx";
 import Experiences from "../components/experience.jsx"
 import ContactMe from "../components/contact.jsx"
 import { motion, useInView, useAnimation } from "framer-motion";
 import ChatWidget from "../components/chatbot.jsx";
 import Educations from "../components/education.jsx";
 import Others from "../components/others.jsx";
+import ScrollToTop from "../components/ScrollToTop.jsx";
 
 function AnimatedSection({ id, children }) {
   const ref = useRef(null);
@@ -48,6 +50,7 @@ function App() {
     <Router>
       <main className="flex flex-col w-full min-h-screen  bg-white dark:bg-black text-black dark:text-white transition-colors duration-500">
         <Navigate />
+        <ScrollToTop />
         <Routes>
           <Route
             path="/"
@@ -82,6 +85,7 @@ function App() {
             }
           />
           <Route path="/projects" element={<FullProjects />} />
+          <Route path="/others" element={<FullOthers />} />
         </Routes>
       </main>
     </Router>

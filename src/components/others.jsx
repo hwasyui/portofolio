@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import data from "../data/others.json";
 import { Badge } from "@/components/ui/badge";
 import { ArrowUpRight } from "lucide-react";
-import { Button } from "@/components/ui/button"; // Assuming you use a Button component
+import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
-const Others = () => {
-  const [showAll, setShowAll] = useState(false);
+const Others = ({ showAll = false }) => {
+  const navigate = useNavigate();
 
   const visibleCertificates = showAll
     ? data.certificates
@@ -59,15 +60,15 @@ const Others = () => {
             </li>
           ))}
         </ul>
-        {data.certificates.length > 3 && (
+        {!showAll && data.certificates.length > 3 && (
           <div className="mt-4 text-center">
             <Button
               variant="outline"
               size="sm"
               className="text-sm text-zinc-700 dark:text-zinc-300 border-zinc-300 dark:border-zinc-600 hover:bg-zinc-100 dark:hover:bg-zinc-700"
-              onClick={() => setShowAll(!showAll)}
+              onClick={() => navigate("/others")}
             >
-              {showAll ? "Show Less" : "Show More"}
+              Show More
             </Button>
           </div>
         )}
