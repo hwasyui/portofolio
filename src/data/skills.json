@@ -1,27 +1,38 @@
 {
-  "fullstack": [
-    "Laravel", "Next.js", "React.js", "Node.js", "Vite", "Flask", "HTML", "CSS", "Bootstrap", "Tailwind CSS"
-  ],
-  "databases": [
-    "SQL", "NoSQL", "PostgreSQL", "MongoDB", "Firebase", "Supabase", "Neon", "Drizzle ORM"
-  ],
-  "languages": [
-    "JavaScript", "Python", "Java"
-  ],
-  "ai": {
-    "Machine Learning": ["Supervised", "Unsupervised", "Reinforcement Learning"],
-    "Deep Learning": ["Model training", "Fine-tuning", "Deployment"],
-    "Computer Vision": ["Object Detection", "Image Classification", "Image Processing"],
-    "Natural Language Processing (NLP)": [
-      "Text Classification", "Generation", "Summarization", "Sentiment Analysis", "Speech Processing", "Transformers", "LLMs"
+  "Full-Stack Web Development": {
+    "Frontend": [
+      "React.js", "Next.js", "Vite", "Tailwind CSS", "ShadCN UI", "HTML", "CSS", "Bootstrap"
+    ],
+    "Backend": [
+      "Node.js", "Laravel", "PHP", "Flask", "FastAPI"
+    ],
+    "Databases": [
+      "MySQL", "PostgreSQL", "MongoDB", "MongoDB Atlas", "Firebase", "Supabase", "Neon", "Drizzle ORM"
     ]
   },
-  "tools": [
-    "Git", "GitHub", "Jupyter Notebook", "Kaggle", "Google Colab", "Notion",
-    "VS Code", "Firebase Console", "MongoDB Compass", "Google Workspace",
-    "Microsoft 365", "Blender", "Unity"
+  "Languages & Tools": [
+    "JavaScript", "Python", "Java", "Git", "GitHub", "VS Code", "Docker"
   ],
-  "visualization": [
-    "Tableau"
+  "AI & Machine Learning": {
+    "Machine Learning and Deep Learning": [
+      "Supervised Learning", "Unsupervised Learning", "Reinforcement Learning",
+      "Regression", "Classification", "Clustering", "Decision Trees", "Random Forest",
+      "scikit-learn", "TensorFlow", "Keras", "PyTorch", "Unsloth"
+    ],
+    "Natural Language Processing (NLP)": [
+      "TF-IDF", "Naive Bayes", "Text Generation", "Summarization", "Sentiment Analysis",
+      "Semantic Search", "Speech Processing", "Chatbot Development",
+      "spaCy", "NLTK", "Transformers", "Hugging Face Transformers",
+      "LangChain", "OpenAI API", "Gemini", "BART", "mT5", "LLaMA"
+    ],
+    "Computer Vision": [
+      "YOLOv8", "OpenCV", "Object Detection", "Image Classification", "Image Processing"
+    ]
+  },
+  "Automation & Data": [
+    "Selenium", "BeautifulSoup", "NumPy", "Pandas", "Tableau", "Seaborn", "Streamlit", "Google Colab", "Jupyter Notebook"
+  ],
+  "Deployment & Platforms": [
+    "Vercel", "Netlify", "Railway", "Firebase Console", "MongoDB Compass", "Notion", "Google Workspace", "Microsoft 365"
   ]
 }

@@ -1,12 +1,10 @@
 import React from "react";
 import {
   Code2,
-  Database,
   Cpu,
   Bot,
-  BarChart2,
   Wrench,
-  Settings2,
+  Terminal
 } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
@@ -28,7 +26,10 @@ const SkillGroup = ({ title, icon, items }) => (
       {items.map((item) => (
         <motion.div
           key={item}
-          whileHover={{ scale: 1.08, backgroundColor: "rgba(255,255,255,0.1)" }}
+          whileHover={{
+            scale: 1.08,
+            backgroundColor: "rgba(255,255,255,0.1)",
+          }}
           transition={{ type: "spring", stiffness: 300, damping: 20 }}
         >
           <Badge
@@ -49,16 +50,15 @@ const Skills = () => {
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl font-bold mb-6 dark:text-white">Skills</h2>
 
-        <Tabs defaultValue="fullstack" className="w-full">
+        <Tabs defaultValue="FullStack" className="w-full">
           <div className="overflow-x-auto scrollbar-hide -mx-4 px-4 sm:mx-0 sm:px-0">
             <TabsList className="inline-flex gap-2 mb-6 border-b border-border pb-2">
               {[
-                { value: "fullstack", label: "Full-Stack", icon: Code2 },
-                { value: "databases", label: "Databases", icon: Database },
-                { value: "languages", label: "Languages", icon: Cpu },
-                { value: "ai", label: "AI", icon: Bot },
-                { value: "tools", label: "Tools", icon: Wrench },
-                { value: "viz", label: "Visualization", icon: BarChart2 },
+                { value: "FullStack", label: "Full-Stack Web Dev", icon: Code2 },
+                { value: "Languages & Tools", label: "Languages & Tools", icon: Cpu },
+                { value: "AI & Machine Learning", label: "AI & ML", icon: Bot },
+                { value: "Automation & Data", label: "Automation & Data", icon: Wrench },
+                { value: "Deployment & Platforms", label: "Deployment", icon: Terminal },
               ].map(({ value, label, icon: Icon }) => (
                 <TabsTrigger
                   key={value}
@@ -75,39 +75,32 @@ const Skills = () => {
             </TabsList>
           </div>
 
-          <TabsContent value="fullstack">
-            <motion.div variants={fadeVariants} initial="initial" animate="animate">
-              <SkillGroup
-                title="Full-Stack Web Development"
-                icon={<Code2 className="w-5 h-5" />}
-                items={skills.fullstack}
-              />
-            </motion.div>
-          </TabsContent>
-
-          <TabsContent value="databases">
-            <motion.div variants={fadeVariants} initial="initial" animate="animate">
-              <SkillGroup
-                title="Databases"
-                icon={<Database className="w-5 h-5" />}
-                items={skills.databases}
-              />
-            </motion.div>
-          </TabsContent>
-
-          <TabsContent value="languages">
-            <motion.div variants={fadeVariants} initial="initial" animate="animate">
-              <SkillGroup
-                title="Programming Languages"
-                icon={<Cpu className="w-5 h-5" />}
-                items={skills.languages}
-              />
-            </motion.div>
-          </TabsContent>
-
-          <TabsContent value="ai">
+          <TabsContent value="FullStack">
             <motion.div variants={fadeVariants} initial="initial" animate="animate" className="space-y-6">
-              {Object.entries(skills.ai).map(([title, items]) => (
+              {Object.entries(skills["Full-Stack Web Development"]).map(([title, items]) => (
+                <SkillGroup
+                  key={title}
+                  title={title}
+                  icon={<Code2 className="w-5 h-5" />}
+                  items={items}
+                />
+              ))}
+            </motion.div>
+          </TabsContent>
+
+          <TabsContent value="Languages & Tools">
+            <motion.div variants={fadeVariants} initial="initial" animate="animate">
+              <SkillGroup
+                title="Languages & Tools"
+                icon={<Cpu className="w-5 h-5" />}
+                items={skills["Languages & Tools"]}
+              />
+            </motion.div>
+          </TabsContent>
+
+          <TabsContent value="AI & Machine Learning">
+            <motion.div variants={fadeVariants} initial="initial" animate="animate" className="space-y-6">
+              {Object.entries(skills["AI & Machine Learning"]).map(([title, items]) => (
                 <SkillGroup
                   key={title}
                   title={title}
@@ -118,22 +111,22 @@ const Skills = () => {
             </motion.div>
           </TabsContent>
 
-          <TabsContent value="tools">
+          <TabsContent value="Automation & Data">
             <motion.div variants={fadeVariants} initial="initial" animate="animate">
               <SkillGroup
-                title="Tools & Platforms"
-                icon={<Settings2 className="w-5 h-5" />}
-                items={skills.tools}
+                title="Automation & Data"
+                icon={<Wrench className="w-5 h-5" />}
+                items={skills["Automation & Data"]}
               />
             </motion.div>
           </TabsContent>
 
-          <TabsContent value="viz">
+          <TabsContent value="Deployment & Platforms">
             <motion.div variants={fadeVariants} initial="initial" animate="animate">
               <SkillGroup
-                title="Data Visualization"
-                icon={<BarChart2 className="w-5 h-5" />}
-                items={skills.visualization}
+                title="Deployment & Platforms"
+                icon={<Terminal className="w-5 h-5" />}
+                items={skills["Deployment & Platforms"]}
               />
             </motion.div>
           </TabsContent>
