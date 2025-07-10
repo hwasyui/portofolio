@@ -7,6 +7,7 @@ import skills from '../data/skills.json';
 import educations from '../data/educations.json';
 import experiences from '../data/experiences.json';
 import projects from '../data/projects.json';
+import contact from '../data/contact.json';
 import { useTheme } from '../context/ThemeContext';
 import ReactMarkdown from "react-markdown";
 
@@ -20,7 +21,7 @@ const RAGChat = () => {
   const { theme } = useTheme();
   const headerChatSvgRef = useRef(null);
 
-  const personalData = { skills, educations, experiences, projects };
+  const personalData = { skills, educations, experiences, projects, contact };
 
   const applyThemeToSVG = () => {
     const g = headerChatSvgRef.current?.contentDocument?.querySelector("g");
@@ -54,6 +55,7 @@ Skills: ${JSON.stringify(personalData.skills, null, 2)}
 Education: ${JSON.stringify(personalData.educations, null, 2)}
 Experience: ${JSON.stringify(personalData.experiences, null, 2)}
 Projects: ${JSON.stringify(personalData.projects, null, 2)}
+Contact and Social: ${JSON.stringify(personalData.contact, null, 2)}
 
 User: ${message}
 `;
