@@ -1,7 +1,7 @@
 [
   {
     "title": "Fantasy Book Chatbot with RAG and Gemini",
-    "image": "/images/fantasybot.png",
+    "image": "/images/rag-chatbot.png",
     "description": "A full-stack AI chatbot that answers questions about 4,000+ fantasy books scraped from OpenLibrary. Built using FastAPI, LangChain, and Gemini 2.5 Pro with FAISS-based semantic retrieval. Includes data scraping with Selenium, vector embedding using MiniLM, and a clean chat interface. Deployed with Docker on Railway.",
     "tech": [
       "Python",
@@ -94,7 +94,7 @@
   },
   {
     "title": "Movie Review Web Application (KADA Bootcamp)",
-    "image": "/images/moviereview.png",
+    "image": "/images/imdb.png",
     "description": "A full-stack MERN web app built right after completing the backend module at KADA Bootcamp. Users can register, log in (via email or Google), browse movies, and leave reviews. Features secure JWT-based authentication, email verification, and a responsive UI built with React + Vite.",
     "tech": ["MongoDB", "Express", "React", "Vite", "Node.js", "JWT", "OAuth 2.0", "Nodemailer", "Cookies"],
     "gitrepo": "https://github.com/hwasyui/tmdb_project",
