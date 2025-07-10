@@ -8,7 +8,8 @@ export default defineConfig({
   plugins: [react(), tailwindcss(),
   ],
     build: {
-    assetsInlineLimit: 0 
+    assetsInlineLimit: 0,
+    sourcemap: true
   },
   resolve: {
     alias: {

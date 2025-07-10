@@ -1,17 +1,17 @@
 {
   "Full-Stack Web Development": {
     "Frontend": [
-      "React.js", "Next.js", "Vite", "Tailwind CSS", "ShadCN UI", "HTML", "CSS", "Bootstrap"
+      "React.js", "Next.js", "Vite", "Tailwind CSS", "ShadCN UI", "HTML", "CSS"
     ],
     "Backend": [
-      "Node.js", "Laravel", "PHP", "Flask", "FastAPI"
+      "Node.js", "Express.js", "Laravel", "PHP", "Flask", "FastAPI"
     ],
     "Databases": [
-      "MySQL", "PostgreSQL", "MongoDB", "MongoDB Atlas", "Firebase", "Supabase", "Neon", "Drizzle ORM"
+      "MySQL", "PostgreSQL", "MongoDB (Local & Atlas)", "Firebase", "Supabase", "Neon", "ORMs: Drizzle, Prisma"
     ]
   },
   "Languages & Tools": [
-    "JavaScript", "Python", "Java", "Git", "GitHub", "VS Code", "Docker"
+    "JavaScript", "Python", "Java", "Git", "GitHub", "VS Code", "Postman"
   ],
   "AI & Machine Learning": {
     "Machine Learning and Deep Learning": [
@@ -22,17 +22,26 @@
     "Natural Language Processing (NLP)": [
       "TF-IDF", "Naive Bayes", "Text Generation", "Summarization", "Sentiment Analysis",
       "Semantic Search", "Speech Processing", "Chatbot Development",
-      "spaCy", "NLTK", "Transformers", "Hugging Face Transformers",
-      "LangChain", "OpenAI API", "Gemini", "BART", "mT5", "LLaMA"
+      "spaCy", "NLTK", "Hugging Face Transformers",
+      "LangChain", "OpenAI API", "Gemini", "BART", "mT5", "LLaMA", "Faiss", "ChromaDB"
     ],
     "Computer Vision": [
       "YOLOv8", "OpenCV", "Object Detection", "Image Classification", "Image Processing"
     ]
   },
-  "Automation & Data": [
-    "Selenium", "BeautifulSoup", "NumPy", "Pandas", "Tableau", "Seaborn", "Streamlit", "Google Colab", "Jupyter Notebook"
-  ],
+  "Automation & Data": {
+    "Web Scraping & Automation": [
+      "Selenium", "BeautifulSoup"
+    ],
+    "Data Analysis & Visualization": [
+      "NumPy", "Pandas", "Seaborn", "Tableau"
+    ],
+    "Prototyping & Notebooks": [
+      "Streamlit", "Google Colab", "Jupyter Notebook"
+    ]
+  },
   "Deployment & Platforms": [
-    "Vercel", "Netlify", "Railway", "Firebase Console", "MongoDB Compass", "Notion", "Google Workspace", "Microsoft 365"
+    "Vercel", "Netlify", "Railway", "Firebase Console", "MongoDB Compass",
+    "Docker", "Notion", "Google Workspace", "Microsoft 365"
   ]
 }

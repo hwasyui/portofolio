@@ -113,11 +113,14 @@ const Skills = () => {
 
           <TabsContent value="Automation & Data">
             <motion.div variants={fadeVariants} initial="initial" animate="animate">
-              <SkillGroup
-                title="Automation & Data"
-                icon={<Wrench className="w-5 h-5" />}
-                items={skills["Automation & Data"]}
-              />
+              {Object.entries(skills["Automation & Data"]).map(([title, items]) => (
+                <SkillGroup
+                  key={title}
+                  title={title}
+                  icon={<Bot className="w-5 h-5" />}
+                  items={items}
+                />
+              ))}
             </motion.div>
           </TabsContent>
 
