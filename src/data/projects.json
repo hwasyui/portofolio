@@ -39,6 +39,21 @@
     "doc": "https://docs.google.com/document/d/1J8QoDjOJuKlc_opY8IzCXN0w-B8Z_DdeBDt3_koaYyM/edit?usp=sharing"
   },
   {
+    "title": "Split Bill Website",
+    "image": "/images/splitbill.png",
+    "description": "A practical bill-splitting web app built using Next.js. It uses Gemini AI to read receipt images (supports Indonesian, English, and other languages), allows editing extracted data, and supports flexible or per-unit splitting. Users can share results via 24-hour links or download as PDF. Developed due to the discontinuation of LINE Split Bill, with future plans to add manual input and multiple currency support.",
+    "tech": [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "Gemini",
+      "JavaScript"
+    ],
+    "gitrepo": "https://github.com/hwasyui/splitbill",
+    "url": "https://splitbill.angelicas.xyz/",
+    "doc": ""
+  },
+  {
     "title": "RIYA's Chatbot",
     "image": "/images/riya-chatbot.png",
     "description": "A mobile chatbot application developed with Flutter and powered by a fine-tuned Llama-3.2-3B-Instruct model, using Transformers and Unsloth on a custom dataset.",
@@ -96,7 +111,17 @@
     "title": "Movie Review Web Application (KADA Bootcamp)",
     "image": "/images/imdb.png",
     "description": "A full-stack MERN web app built right after completing the backend module at KADA Bootcamp. Users can register, log in (via email or Google), browse movies, and leave reviews. Features secure JWT-based authentication, email verification, and a responsive UI built with React + Vite.",
-    "tech": ["MongoDB", "Express", "React", "Vite", "Node.js", "JWT", "OAuth 2.0", "Nodemailer", "Cookies"],
+    "tech": [
+      "MongoDB",
+      "Express",
+      "React",
+      "Vite",
+      "Node.js",
+      "JWT",
+      "OAuth 2.0",
+      "Nodemailer",
+      "Cookies"
+    ],
     "gitrepo": "https://github.com/hwasyui/tmdb_project",
     "url": "",
     "doc": ""
